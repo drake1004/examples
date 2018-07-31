@@ -1,0 +1,18 @@
+// customize some Bootstrap variables
+$primary: darken(#428bca, 20%);
+// the ~ allows you to reference things in node_modules
+@import "~bootstrap/scss/bootstrap";
+@import "variables";
+@import "windows";
+@import 'font-awesome/css/all.css';
+body {
+  background: url($background_1);
+  background-size: cover;
+  // register
+  .header-register{
+    @include text-shadow();
+    font-family: Arial;
+    font-size: 18px;
+  }
+
+}
